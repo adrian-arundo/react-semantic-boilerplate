@@ -2,13 +2,13 @@
          Site Settings
 *******************************/
 
-@import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');
 
 /*-------------------
        Fonts
 --------------------*/
 
-@fontName          : 'Inter UI';
+@fontName          : 'Nunito Sans', sans-serif;
 @fontSmoothing     : antialiased;
 
 @headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -24,10 +24,10 @@
 --------------------*/
 
 /* This is the single variable that controls them all */
-@emSize   : 14px;
+@emSize   : 16px;
 
 /* The size of page text  */
-@fontSize : 14px;
+@fontSize : 16px;
 
 
 /*-------------------
@@ -46,8 +46,8 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @black;
+@primaryColor        : @brand;
+@secondaryColor      : @layout-darkest;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -56,7 +56,7 @@
   Page Heading
 ---------------*/
 
-@headerFontWeight : @bold;
+@headerFontWeight : @normal;
 @headerLineHeight : unit((18 / 14), em);
 
 @h1 : unit((28 / 14), rem);
@@ -214,6 +214,19 @@
       Site Colors
 --------------------*/
 
+/*-------------------
+      Arundo Colors
+--------------------*/
+@brand: #40b0e5;
+
+@layout-lightest: #FCFEFF;
+@layout-lighter: #F2F8FA;
+@layout-light: #DCE5E8;
+@layout-dark: #0D3C59;
+@layout-darker: #002740;
+@layout-darkest: #032033;
+
+
 /*---  Colors  ---*/
 @red              : #DB2828;
 @orange           : #F2711C;
@@ -221,7 +234,7 @@
 @olive            : #B5CC18;
 @green            : #21BA45;
 @teal             : #00B5AD;
-@blue             : #2185D0;
+@blue             : @brand;
 @violet           : #6435C9;
 @purple           : #A333C8;
 @pink             : #E03997;
